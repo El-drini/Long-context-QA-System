@@ -1,2 +1,4 @@
 # Long-context-QA-System
-A simple Retrieval-Augmented Generation mini (RAG) style Question Answering system built using Sentence Transformers, Cosine Similarity, and HuggingFace Transformers. The system accepts a long document, splits it into chunks, retrieves the most relevant chunks using semantic similarity, and generates an answer using a language model.
+This project implements a simple Long-Context Question Answering (QA) system that can process large pieces of text and retrieve the most relevant information to answer a user's question.
+
+The system follows a Retrieval-based approach similar to Retrieval-Augmented Generation mini (RAG). Instead of giving the entire document to the model, the text is first divided into smaller chunks, converted into vector embeddings, and stored in a vector index. When a user asks a question, the system retrieves the most relevant chunks and generates an answer based on the retrieved context.
